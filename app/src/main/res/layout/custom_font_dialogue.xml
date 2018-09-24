@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+
+    >
+
+
+    <LinearLayout
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ea6500"
+        >
+
+        <TextView
+            android:id="@+id/select_language_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Font Size"
+            android:textColor="#fff"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textAlignment="center"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/seekbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="146dp"
+        android:layout_alignParentLeft="true"
+        android:progressDrawable="@drawable/font_seekbar"
+        android:maxHeight="3dp"
+        android:minHeight="3dp"
+        />
+
+
+    <TextView
+        android:id="@+id/ok_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:layout_alignTop="@+id/reset_buttton"
+        android:layout_marginEnd="60dp"
+        android:text="OK"
+        android:textColor="#ff7700"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/reset_buttton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekbar1"
+        android:text="Reset"
+        android:textColor="#ff7700"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        />
+
+
+
+
+</RelativeLayout>
